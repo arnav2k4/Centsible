@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <h1 style = "margin-bottom: 2%;">Financial Dashboard</h1>
+    <h2 style = "margin-bottom: 4%; align-items: center;">Welcome to Your Dashboard</h2>
+    <div id="user-info"></div>
+    <div id="username-display" style="margin-top: 20px; font-size: 18px; font-weight: bold;"></div>
+
+    <div id="user-info"></div> <!-- This will display the username -->
+
+    <div class="form-container">          
+      
+      <label for="fixed-income">Fixed Income:</label>
+      <input type="number" id="fixed-income" placeholder="Enter fixed income" required>
+      
+      <label for="variable-income">Variable Income:</label>
+      <input type="number" id="variable-income" placeholder="Enter variable income" required>
+      
+      <label for="fixed-expenses">Fixed Expenses:</label>
+      <input type="number" id="fixed-expenses" placeholder="Enter fixed expenses" required>
+      
+      <label for="variable-expenses">Variable Expenses:</label>
+      <input type="number" id="variable-expenses" placeholder="Enter variable expenses" required>
+      
+      <label for="miscellaneous-expenses">Miscellaneous Expenses:</label>
+      <input type="number" id="miscellaneous-expenses" placeholder="Enter miscellaneous expenses" required>
+
+      <label for="risk-appetite">Risk Appetite:</label>
+        <select id="risk-appetite" required>
+        <option value="">Select Risk Level</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+        </select>
+
+      <button onclick="nextPage()">Next</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
