@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container" id="login-form">
+            <h2>Login</h2>
+            <form id="login" onsubmit="loginUser(event)">
+                <input type="text" id="login-username" placeholder="Username" required><br>
+                <input type="password" id="login-password" placeholder="Password" required><br>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="javascript:void(0);" onclick="toggleForm()">Sign up here</a></p>
+        </div>
+
+        <div class="form-container" id="signup-form">
+            <h2>Signup</h2>
+            <form id="signup" onsubmit="signupUser(event)">
+                <input type="text" id="signup-username" placeholder="Username" required><br>
+                <input type="email" id="signup-email" placeholder="Email" required><br>
+                <input type="password" id="signup-password" placeholder="Password" required><br>
+                <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required><br>
+                <button type="submit">Signup</button>
+            </form>
+            <p>Already have an account? <a href="javascript:void(0);" onclick="toggleForm()">Login here</a></p>
+        </div>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
